@@ -1,25 +1,37 @@
 import { motion } from "framer-motion";
 
+const base = import.meta.env.BASE_URL;
+
 const clients = [
   {
     name: "Cougar Completion Services",
     industry: "Oil and Gas",
-    logo: "https://techexecsolution.com/wp-content/uploads/2025/04/cougar-completion-services_full-color-1024x603.png",
-    description: "Modernized operations with a new website and secure employee onboarding system, reducing paperwork and strengthening compliance.",
+    logo: `${base}clients/cougar.png`,
+    /** White mark — needs a dark strip to read on the page */
+    logoClassName: "max-h-14 w-auto object-contain",
+    logoFrameClassName: "bg-zinc-900",
+    description:
+      "Modernized operations with a new website and secure employee onboarding system, reducing paperwork and strengthening compliance.",
     url: "https://cougarsvc.com/",
   },
   {
     name: "Léonce Manufacturing",
     industry: "Manufacturing",
-    logo: "https://techexecsolution.com/wp-content/uploads/2025/04/leonce_logo_black.png",
-    description: "Built a scalable digital foundation with a custom website and enterprise resource planning system connecting accounting, inventory, and workflows.",
+    logo: `${base}clients/leonce.png`,
+    logoClassName: "max-h-14 w-auto object-contain",
+    logoFrameClassName: "bg-white dark:bg-zinc-950",
+    description:
+      "Built a scalable digital foundation with a custom website and enterprise resource planning system connecting accounting, inventory, and workflows.",
     url: "https://leoncemfg.com/",
   },
   {
     name: "Shifting TechMindset",
     industry: "Education",
-    logo: "https://techexecsolution.com/wp-content/uploads/2025/04/stm_logo-1536x576-1-1024x384.png",
-    description: "Empowered students and educators with modern digital tools and platforms for technology education and community outreach.",
+    logo: `${base}clients/techmindset.png`,
+    logoClassName: "max-h-14 w-auto object-contain",
+    logoFrameClassName: "bg-white dark:bg-zinc-950",
+    description:
+      "Empowered students and educators with modern digital tools and platforms for technology education and community outreach.",
     url: "https://techmindset.org/",
   },
 ];
@@ -55,12 +67,15 @@ const ClientsSection = () => {
               transition={{ duration: 0.5, delay: i * 0.15 }}
               className="card-glass group flex flex-col rounded-2xl p-8 transition-all duration-300 hover:glow-border"
             >
-              <div className="mb-6 flex h-20 items-center justify-center rounded-xl bg-foreground/5 p-4">
+              <div
+                className={`mb-6 flex h-20 items-center justify-center rounded-xl p-4 ${client.logoFrameClassName}`}
+              >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-14 w-auto object-contain brightness-0 invert opacity-80 transition-opacity group-hover:opacity-100"
+                  className={`${client.logoClassName} opacity-90 transition-opacity group-hover:opacity-100`}
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <span className="text-xs font-semibold uppercase tracking-wider text-primary">{client.industry}</span>
