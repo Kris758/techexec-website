@@ -4,7 +4,7 @@ import path from "path";
 import type { Plugin } from "vite";
 
 // https://vitejs.dev/config/
-// GitHub Pages project sites live under /<repo>/ — set VITE_BASE_PATH=/<repo>/ when building (see .github/workflows/deploy-pages.yml).
+// GitHub project pages default to base /<repo>/; custom domains use / (see CUSTOM_SITE_URL in deploy-pages.yml).
 const base = process.env.VITE_BASE_PATH ?? "/";
 
 /** Absolute og:image / og:url need a public origin — set VITE_SITE_URL in CI (e.g. https://user.github.io/repo). */
