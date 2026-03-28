@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechExec Solutions</title>
+    <meta name="description" content="Technology solutions built for success — websites, training, and business technology consulting." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar" aria-label="Primary">
+      <div class="navbar__inner container">
+        <a href="#home" class="logo">Tech<span class="text-gradient">Exec</span></a>
+
+        <div class="navbar__desktop">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#clients" class="nav-link">Clients</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="tel:+12105950892" class="btn btn--sm btn--primary">
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            (210) 595-0892
+          </a>
+        </div>
+
+        <button type="button" class="navbar__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-mobile">
+          <span class="sr-only">Toggle menu</span>
+          <svg class="icon icon-menu" id="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+          <svg class="icon icon-close hidden" id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="navbar__mobile hidden" id="nav-mobile">
+        <div class="navbar__mobile-inner container">
+          <a href="#home" class="nav-link nav-link--mobile">Home</a>
+          <a href="#services" class="nav-link nav-link--mobile">Services</a>
+          <a href="#about" class="nav-link nav-link--mobile">About</a>
+          <a href="#clients" class="nav-link nav-link--mobile">Clients</a>
+          <a href="#contact" class="nav-link nav-link--mobile">Contact</a>
+          <a href="tel:+12105950892" class="btn btn--primary btn--block">
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            (210) 595-0892
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__content container">
+          <div class="hero__badge">
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Secure · Scalable · Strategic
+          </div>
+          <h1 class="hero__title">
+            Technology Solutions
+            <span class="text-gradient"> Built for Success</span>
+          </h1>
+          <p class="hero__lead">
+            We transform ideas into secure, efficient, and impactful technology solutions that drive business growth — one pixel at a time.
+          </p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--lg btn--primary glow-border">
+              Explore Services
+              <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a
+              href="https://calendar.app.google/QkZv5VfKgVxivxn69"
+              class="btn btn--lg btn--outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule Consultation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <p class="eyebrow">What We Do</p>
+            <h2 class="section__title">Our Expertise</h2>
+            <p class="section__desc">
+              Strengthen your digital presence, enhance your brand's identity, and drive business growth with smart technology and strategic solutions.
+            </p>
+          </header>
+          <div class="grid grid--3">
+            <article class="card-glass card-pad hover-glow">
+              <div class="icon-wrap">
+                <svg class="icon icon-lg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
+              <h3 class="card-title">Website Development</h3>
+              <p class="card-text">
+                High-performing websites that combine sleek design, strong security, and scalable functionality to elevate your digital presence.
+              </p>
+            </article>
+            <article class="card-glass card-pad hover-glow">
+              <div class="icon-wrap">
+                <svg class="icon icon-lg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg>
+              </div>
+              <h3 class="card-title">Training &amp; Onboarding</h3>
+              <p class="card-text">
+                Modern, easy-to-use digital platforms that streamline employee onboarding, training, and compliance management.
+              </p>
+            </article>
+            <article class="card-glass card-pad hover-glow">
+              <div class="icon-wrap">
+                <svg class="icon icon-lg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10" /><line x1="12" y1="20" x2="12" y2="4" /><line x1="6" y1="20" x2="6" y2="14" />
+                </svg>
+              </div>
+              <h3 class="card-title">Business Technology Consulting</h3>
+              <p class="card-text">
+                Smart and secure technology strategies to help businesses automate, optimize, and scale operations efficiently.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="about-grid">
+            <div>
+              <p class="eyebrow">Why TechExec</p>
+              <h2 class="section__title section__title--left">
+                Empowering Business Through
+                <span class="text-gradient"> Smarter Technology</span>
+              </h2>
+              <p class="about-lead">
+                Success today demands innovation, security, and smart execution. TechExec delivers the digital strategies and technology solutions businesses need to thrive — from high-performance websites to automation and cybersecurity.
+              </p>
+              <ul class="check-list">
+                <li>
+                  <svg class="icon check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  Tailored solutions for your industry
+                </li>
+                <li>
+                  <svg class="icon check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  Enterprise-grade security &amp; compliance
+                </li>
+                <li>
+                  <svg class="icon check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  End-to-end project management
+                </li>
+                <li>
+                  <svg class="icon check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" />
+                  </svg>
+                  Ongoing support &amp; optimization
+                </li>
+              </ul>
+            </div>
+            <div class="stats-grid">
+              <div class="card-glass stat-card">
+                <span class="stat-value text-gradient">50+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+              <div class="card-glass stat-card">
+                <span class="stat-value text-gradient">99%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+              <div class="card-glass stat-card">
+                <span class="stat-value text-gradient">24/7</span>
+                <span class="stat-label">Support Available</span>
+              </div>
+              <div class="card-glass stat-card">
+                <span class="stat-value text-gradient">10+</span>
+                <span class="stat-label">Industries Served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clients" class="section">
+        <div class="container">
+          <header class="section__header section__header--center">
+            <p class="eyebrow">Case Studies</p>
+            <h2 class="section__title">Our Clients</h2>
+            <p class="section__desc">
+              We support organizations across diverse sectors, including energy, manufacturing, and education.
+            </p>
+          </header>
+          <div class="grid grid--3">
+            <a href="https://cougarsvc.com/" class="card-glass client-card hover-glow" target="_blank" rel="noopener noreferrer">
+              <div class="client-logo">
+                <img
+                  src="https://techexecsolution.com/wp-content/uploads/2025/04/cougar-completion-services_full-color-1024x603.png"
+                  alt="Cougar Completion Services"
+                  loading="lazy"
+                  width="320"
+                  height="80"
+                />
+              </div>
+              <span class="client-industry">Oil and Gas</span>
+              <h3 class="client-name">Cougar Completion Services</h3>
+              <p class="client-desc">
+                Modernized operations with a new website and secure employee onboarding system, reducing paperwork and strengthening compliance.
+              </p>
+            </a>
+            <a href="https://leoncemfg.com/" class="card-glass client-card hover-glow" target="_blank" rel="noopener noreferrer">
+              <div class="client-logo">
+                <img
+                  src="https://techexecsolution.com/wp-content/uploads/2025/04/leonce_logo_black.png"
+                  alt="Léonce Manufacturing"
+                  loading="lazy"
+                  width="320"
+                  height="80"
+                />
+              </div>
+              <span class="client-industry">Manufacturing</span>
+              <h3 class="client-name">Léonce Manufacturing</h3>
+              <p class="client-desc">
+                Built a scalable digital foundation with a custom website and enterprise resource planning system connecting accounting, inventory, and workflows.
+              </p>
+            </a>
+            <a href="https://techmindset.org/" class="card-glass client-card hover-glow" target="_blank" rel="noopener noreferrer">
+              <div class="client-logo">
+                <img
+                  src="https://techexecsolution.com/wp-content/uploads/2025/04/stm_logo-1536x576-1-1024x384.png"
+                  alt="Shifting TechMindset"
+                  loading="lazy"
+                  width="320"
+                  height="80"
+                />
+              </div>
+              <span class="client-industry">Education</span>
+              <h3 class="client-name">Shifting TechMindset</h3>
+              <p class="client-desc">
+                Empowered students and educators with modern digital tools and platforms for technology education and community outreach.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="card-glass glow-border cta-box">
+            <h2 class="section__title">
+              Ready to <span class="text-gradient">Transform</span> Your Business?
+            </h2>
+            <p class="cta-lead">
+              Let's discuss how TechExec can help you achieve your technology goals. Schedule a free consultation today.
+            </p>
+            <div class="cta-actions">
+              <a
+                href="https://calendar.app.google/QkZv5VfKgVxivxn69"
+                class="btn btn--lg btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Schedule Consultation
+                <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="tel:+12105950892" class="btn btn--lg btn--outline">Call (210) 595-0892</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#home" class="logo logo--sm">Tech<span class="text-gradient">Exec</span></a>
+        <p class="footer__copy">© <span id="year"></span> TechExec Solutions. All rights reserved.</p>
+        <nav class="footer__nav" aria-label="Footer">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
