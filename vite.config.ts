@@ -1,10 +1,30 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import type { Plugin } from "vite";
 
 // https://vitejs.dev/config/
 // GitHub Pages project sites live under /<repo>/ — set VITE_BASE_PATH=/<repo>/ when building (see .github/workflows/deploy-pages.yml).
 const base = process.env.VITE_BASE_PATH ?? "/";
+
+/** Absolute og:image / og:url need a public origin — set VITE_SITE_URL in CI (e.g. https://user.github.io/repo). */
+function htmlOpenGraphPlugin(): Plugin {
+  return {
+    name: "html-open-graph",
+    transformIndexHtml(html) {
+      const siteUrl = process.env.VITE_SITE_URL?.replace(/\/$/, "");
+      const basePath = base.replace(/\/$/, "") || "";
+      const relOg = `${basePath}/og.png`.replace(/\/+/g, "/");
+      const ogImage = siteUrl ? `${siteUrl}/og.png` : relOg.startsWith("/") ? relOg : `/${relOg}`;
+      const ogUrlMeta = siteUrl
+        ? `    <meta property="og:url" content="${siteUrl}/" />\n`
+        : "";
+      return html
+        .replaceAll("__OG_IMAGE__", ogImage)
+        .replace("__OG_URL_META__", ogUrlMeta);
+    },
+  };
+}
 
 export default defineConfig(() => ({
   base,
@@ -15,7 +35,7 @@ export default defineConfig(() => ({
       overlay: false,
     },
   },
-  plugins: [react()],
+  plugins: [react(), htmlOpenGraphPlugin()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
